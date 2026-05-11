@@ -1,1 +1,40 @@
+#include <iostream>
 
+using namespace std;
+
+void FirstColum(int i)
+{
+    if (i < 10)
+        cout << i << " | ";
+    else
+        cout << i << "| ";
+   
+}
+void printTheHead()
+{
+    cout << "__________________________________________________\n";
+    cout << "                Multiplcationtable                \n";
+    cout << "__________________________________________________\n";
+    cout << "    1    2    3    4    5    6    7    8    9    10\n";
+    cout << "--------------------------------------------------\n";
+}
+void PrintMultiplcationtable()
+{
+    for (int i = 1;i <= 10;i++)
+    {
+        FirstColum(i);
+        for (int j = 1;j <= 10;j++)
+        {
+            cout << j * i << "    ";
+        }
+        cout << endl;
+    }
+
+}
+
+int main()
+{
+    printTheHead();
+    PrintMultiplcationtable();
+
+}
